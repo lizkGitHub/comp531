@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <meta charset="utf-8">
+        <title>Main Page</title>
+        <meta name="author" content="Zhaokang Li">
+	    <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+ -->        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script src="main.js"></script>
+        <link href="main.css" rel="stylesheet">
+    </head>
+    
+    <body>
+
+        
+        <div class="wrapper">
+
+			<div class="box">
+					<!-- main right col -->
+					<div class="" id="main">
+					  
+						<div class="padding">
+							<div class="full">
+								<!-- content -->                      
+								<div class="row">
+									<div class="row row-offcanvas row-offcanvas-left">
+									<nav class="navbar navbar-default navbar-static-top">
+									  <div class="container">
+									    <ul class="nav navbar-nav">
+											  <li>
+												<a href="#"><i class="glyphicon glyphicon-home"></i> Home</a>
+											  </li>
+										</ul>
+									  </div>
+									</nav>
+
+								 <!-- main col left --> 
+								 <div class="col-sm-3">
+								   
+									  <div class="panel panel-default">
+									  	
+										<div class="panel-body">
+											<a href="index.html" class="btn btn-default btn-sm">
+          									<span class="glyphicon glyphicon-log-out"></span> Log out
+        									</a>
+        									<a href="profile.html" class="btn btn-default btn-sm pull-right">
+          									<span class="glyphicon glyphicon-align-justify"></span> Profile
+        									</a>
+										   <div class="panel-thumbnail"><img src="assets/img/imgUserHead0.jpg" class="img-responsive"></div>
+										   <br>
+										  <p id="userName"class="lead">Finch</p>
+										  <p id="userStatus" >Running running running!</p>
+										  <div class="input-group text-center">
+											<input class="form-control input-sm" id="newStatus" placeholder="new status" type="text">
+											  <span class="input-group-btn"><button id="btnUpdateStatus" class="btn btn-sm btn-primary" type="button">Update</button></span>
+										  </div>										  
+										 
+										</div>
+									  </div>
+
+								
+							
+								   
+									  <div class="panel panel-default">
+										 <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Friends</h4></div>
+										  <div class="panel-body">
+										  	<div class="friend-list">
+										  		<button class="glyphicon glyphicon-remove"></button>
+												<img src="assets/img/imgUserHead1.jpg" class="img-circle  center-block"> 
+												<div class="clearfix"></div>
+												<div class="friend-list-name"><a href="#" class="lead">Ramon</a></div>
+												<p class="friend-list-status">Make a better place...</p>
+												<hr>
+											</div>
+											<div class="friend-list">
+												<button class="glyphicon glyphicon-remove"></button>
+												<img src="assets/img/imgUserHead2.jpg" class="img-circle  center-block"> 
+												<div class="clearfix"></div>
+												<div class="friend-list-name"><a href="#" class="lead">Jacob</a></div>
+												<p class="friend-list-status">What a wonderful world!</p>
+												<hr>
+											</div>
+											<div class="friend-list">
+												<button class="glyphicon glyphicon-remove"></button>
+												<img src="assets/img/imgUserHead3.jpg" class="img-circle  center-block"> 
+												<div class="clearfix"></div>
+												<div class="friend-list-name"><a href="#" class="lead">Alice</a></div>
+												<p class="friend-list-status">Too much homework...</p>
+												<hr>
+											</div>
+											<div class="input-group text-center">
+												<input class="form-control input-sm" id="addUser" placeholder="user" type="text">
+												  <span class="input-group-btn"><button id="btnAddStatus" class="btn btn-sm btn-primary" type="button">Add</button></span>
+										  	</div>
+										  </div>
+									  </div>														   
+								  </div>
+								  
+								  <!-- main col right -->
+								  <div class="col-sm-9">
+								  	<div class="well">
+								  		<form class="form">
+								  			<div class="row">
+								  			<div class="col-sm-3">
+								  				<div class="fileUpload center-block btn btn-md btn-primary">
+					                                <span>Add image</span>
+					                                <input type="file" class="upload" />
+					                            </div>
+												<br>
+												<br>
+												<button class="btn btn-md btn-default center-block" id="btnCancelPost">Cancel</button>
+											</div>
+											<div class="col-sm-4">
+												<textarea class="form-control" rows="3" id="newPost" placeholder="What's up?"></textarea>
+												<br>
+												<button class="btn btn-md btn-default center-block" id="btnSubmitPost" type="submit">Post</button>
+											</div>
+											<img class="img-welcome col-sm-4" src="assets/img/logoWelcome.jpg">
+											</div>
+								  		</form>
+								  	</div>
+
+									   
+										<div class="well"> 
+										   <form class="form">
+											<div class="input-group text-center">
+											<input class="form-control input-md" placeholder="Search Post" type="text">
+											  <span class="input-group-btn"><button id="btnSearchPost" class="btn btn-md btn-primary" type="button">Search</button></span>
+											</div>
+										  </form>
+										</div>
+							  
+									   <div class="panel panel-default">
+										 <div class="panel-heading">
+										 	<div class="card-user"><img src="assets/img/imgUserHead3.jpg" class="img-sm">
+										 	<span><a href="#" class="lead card-user-name">Alice</a>
+										 	<span class="small timestamp">09/17/2016</span></span>
+										 	<button class="btn btn-sm btn-default pull-right" type="button">edit</button>
+										 </div>
+										 </div>
+										  <div class="panel-body">
+											<p class="card-user-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  src=""et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+											<div><img  class="card-img" src="assets/img/imgContent1.jpg"/></div>
+											<br>
+											<form class="form">
+											<div class="input-group text-center">
+											<input class="form-control input-sm" placeholder="Comment..." type="text">
+											  <span class="input-group-btn"><button id="btnComment" class="btn btn-sm btn-default" type="button">Comment</button></span>
+											</div>
+										  </form>
+										  </div>
+									   </div>
+
+									   <div class="panel panel-default">
+										 <div class="panel-heading">
+										 	<div class="card-user"><img src="assets/img/imgUserHead0.jpg" class="img-sm">
+										 	<span><a href="#" class="lead card-user-name">Finch</a>
+										 	<span class="small timestamp">09/16/2016</span></span>
+										 	<button class="btn btn-sm btn-default pull-right" type="button">edit</button>
+										 </div>
+										 </div>
+										  <div class="panel-body">
+											<p class="card-user-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  src=""et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+											<div><img  class="card-img" src="assets/img/imgContent2.jpg"/></div>
+											<br>
+											<form class="form">
+											<div class="input-group text-center">
+											<input class="form-control input-sm" placeholder="Comment..." type="text">
+											  <span class="input-group-btn"><button id="btnComment" class="btn btn-sm btn-default" type="button">Comment</button></span>
+											</div>
+										  </form>
+										  </div>
+									   </div>
+
+									   <div class="panel panel-default">
+										 <div class="panel-heading">
+										 	<div class="card-user"><img src="assets/img/imgUserHead1.jpg" class="img-sm">
+										 	<span><a href="#" class="lead card-user-name">Ramon</a>
+										 	<span class="small timestamp">09/15/2016</span></span>
+										 	<button id="btnSearchPost" class="btn btn-sm btn-default pull-right" type="button">edit</button>
+										 </div>
+										 </div>
+										  <div class="panel-body">
+											<p class="card-user-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  src=""et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+											<div><img  class="card-img" src="assets/img/imgContent3.jpg"/></div>
+											<br>
+											<form class="form">
+											<div class="input-group text-center">
+											<input class="form-control input-sm" placeholder="Comment..." type="text">
+											  <span class="input-group-btn"><button id="btnComment" class="btn btn-sm btn-default" type="button">Comment</button></span>
+											</div>
+										  </form>
+										  </div>
+									   </div>
+
+									   <div class="panel panel-default">
+										 <div class="panel-heading">
+										 	<div class="card-user"><img src="assets/img/imgUserHead2.jpg" class="img-sm">
+										 	<span><a href="#" class="lead card-user-name">Jacob</a>
+										 	<span class="small timestamp">09/17/2016</span></span>
+										 	<button id="btnSearchPost" class="btn btn-sm btn-default pull-right" type="button">edit</button>
+										 </div>
+										 </div>
+										  <div class="panel-body">
+											<p class="card-user-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  src=""et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+											<div><img  class="card-img" src="assets/img/imgContent4.jpg"/></div>
+											<br>
+											<form class="form">
+											<div class="input-group text-center">
+											<input class="form-control input-sm" placeholder="Comment..." type="text">
+											  <span class="input-group-btn"><button id="btnComment" class="btn btn-sm btn-default" type="button">Comment</button></span>
+											</div>
+										  	</form>
+										  </div>
+									   </div>
+									   <div class="panel panel-default">
+										 <div class="panel-heading">
+										 	<div class="card-user"><img src="assets/img/imgUserHead2.jpg" class="img-sm">
+										 	<span><a href="#" class="lead card-user-name">Jacob</a>
+										 	<span class="small timestamp">09/12/2016</span></span>
+										 	<button id="btnSearchPost" class="btn btn-sm btn-default pull-right" type="button">edit</button>
+										 </div>
+										 </div>
+										  <div class="panel-body">
+											<p class="card-user-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  src=""et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+											<br>
+											<form class="form">
+											<div class="input-group text-center">
+											<input class="form-control input-sm" placeholder="Comment..." type="text">
+											  <span class="input-group-btn"><button id="btnComment" class="btn btn-sm btn-default" type="button">Comment</button></span>
+											</div>
+										  	</form>
+										  </div>
+									   </div>
+									   <div class="panel panel-default">
+										 <div class="panel-heading">
+										 	<div class="card-user"><img src="assets/img/imgUserHead1.jpg" class="img-sm">
+										 	<span><a href="#" class="lead card-user-name">Ramon</a>
+										 	<span class="small timestamp">09/13/2016</span></span>
+										 	<button id="btnSearchPost" class="btn btn-sm btn-default pull-right" type="button">edit</button>
+										 </div>
+										 </div>
+										  <div class="panel-body">
+											<p class="card-user-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  src=""et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+											<br>
+											<form class="form">
+											<div class="input-group text-center">
+											<input class="form-control input-sm" placeholder="Comment..." type="text">
+											  <span class="input-group-btn"><button id="btnComment" class="btn btn-sm btn-default" type="button">Comment</button></span>
+											</div>
+										  </form>
+										  </div>
+									   </div>
+									   <div class="panel panel-default">
+										 <div class="panel-heading">
+										 	<div class="card-user"><img src="assets/img/imgUserHead0.jpg" class="img-sm">
+										 	<span><a href="#" class="lead card-user-name">Finch</a>
+										 	<span class="small timestamp">09/11/2016</span></span>
+										 	<button class="btn btn-sm btn-default pull-right" type="button">edit</button>
+										 </div>
+										 </div>
+										  <div class="panel-body">
+											<p class="card-user-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  src=""et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+											<br>
+											<form class="form">
+											<div class="input-group text-center">
+											<input class="form-control input-sm" placeholder="Comment..." type="text">
+											  <span class="input-group-btn"><button id="btnComment" class="btn btn-sm btn-default" type="button">Comment</button></span>
+											</div>
+										  </form>
+										  </div>
+									   </div>
+									   <div class="panel panel-default">
+										 <div class="panel-heading">
+										 	<div class="card-user"><img src="assets/img/imgUserHead3.jpg" class="img-sm">
+										 	<span><a href="#" class="lead card-user-name">Alice</a>
+										 	<span class="small timestamp">09/10/2016</span></span>
+										 	<button class="btn btn-sm btn-default pull-right" type="button">edit</button>
+										 </div>
+										 </div>
+										  <div class="panel-body">
+											<p class="card-user-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  src=""et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+											<br>
+											<form class="form">
+											<div class="input-group text-center">
+											<input class="form-control input-sm" placeholder="Comment..." type="text">
+											  <span class="input-group-btn"><button id="btnComment" class="btn btn-sm btn-default" type="button">Comment</button></span>
+											</div>
+										  </form>
+										  </div>
+									   </div>
+
+																		
+								  </div>
+							   </div><!--/row-->
+
+							   <!-- Footer -->
+						        <footer>
+						            <hr>
+						        	<div class="container">
+						        		<div class="row">
+        			
+						        			<div class="col-sm-8 col-sm-offset-5">
+						        				<div class="footer-border"></div>
+						        				<p>&copy; Zhaokang Li 2016</p>
+						        			</div>
+						        			
+						        		</div>
+						        	</div>
+						        </footer>
+							
+															  
+							</div><!-- /col-9 -->
+						</div><!-- /padding -->
+					</div>
+					<!-- /main -->
+				  
+				</div>
+			</div>
+		</div>
+
+
+        
+
+</body></html>
